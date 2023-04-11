@@ -1,0 +1,9 @@
+
+npx tailwindcss -i ./input.css -o ./public/styles.css
+
+npx tailwindcss -i ./input.css -o ./public/styles.css --watch
+
+npm install @tailwindcss/typography
+
+npm install -D @tailwindcss/aspect-ratio
+

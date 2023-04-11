@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .mybutton {
+                @apply bg-myblue text-white px-4 py-2 rounded-md hover:bg-red-700 duration-200 font-semibold text-md;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box mx-4 my-8">
+        <h2 class="font-semibold text-3xl text-custom w-[25%] mx-auto">Article 2</h2>
+        <p class="para text-blue-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum optio, ducimus magnam voluptates consequatur unde minima velit beatae maiores officiis odio labore amet quibusdam eaque possimus ut non ratione ad molestias! Velit id amet aliquam exercitationem non deserunt quas obcaecati ut, minima reiciendis sed illum commodi vel corrupti cum, nisi mollitia doloremque deleniti quaerat?
+        </p>
+        <button class="mybutton">Click Me</button>
+        <!-- <button class="bg-myblue text-white px-4 py-2 rounded-md hover:bg-red-700 duration-200 font-semibold text-md">Click Me</button> -->
+    </div>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                // clifford: '#da373d',
+                custom: '#070A52',
+                myblue: '#7149C6'
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>

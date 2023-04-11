@@ -1,0 +1,21 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./input.css -o ./public/styles.css",
+    "tailwind-dev": "npx tailwindcss -i ./input.css -o ./public/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9"
+  }
+}
